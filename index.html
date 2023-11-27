@@ -4,9 +4,86 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style/styles.css">
-  <title>Document</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <title>iShoot</title>
+  <script src="https://kit.fontawesome.com/fa0ecc104d.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600;700;800&display=swap" rel="font">
 </head>
 <body>
-  
+  <!-- Landing page-->
+  <div class="landing-page">
+    <!-- Header -->
+    <header>
+      <nav>
+        <div class="nav+header-container">
+          <h1>iShoot</h1>
+          <div>
+            <ul>
+              <li><a>About</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- need to add background image-->
+    <h1>Photoshoot</h1>
+    <h4>Freelance urban and studio photographer based in Edinburgh, Scotland</h4>
+  </div>
+
+ <!-- About me -->
+  <div class="aboutme" id="aboutme">
+    <h1>Who am i?</h1>
+  </div>
+
+  <!-- Portfolio -->
+  <div class="portfolio" id="portfolio">
+    <div class="portfolio-heading"> 
+      <h1>Portfolio</h1>  
+    </div>
+
+    <div class="image-container">
+      <img src="images/brian-lawson-b1lyrH1DEUw-unsplash.jpg">
+      <img src="images/serjan-midili-yedYysaveC8-unsplash.jpg">
+      <img src="images/roan-lavery--Y-D5GwSccQ-unsplash.jpg">
+      <img src="images/lance-magnaye-lP_VvdHI5to-unsplash.jpg">
+    </div>
+  </div>
+
+  <!-- Contact me -->
+  <div class="contact" id="contact">
+    <h1>Thank you for visiting, please feel free to use any of the methods provided below to contact me.</h1>
+    <form>
+      <div class="input-group">
+        <input type="text" id="name" required>
+        <label for="name">Name</label>
+      </div>
+      <div class="input-group">
+        <input type="text" id="number" required>
+        <label for="name">Phone number</label>
+      </div>
+      <div class="input-group">
+        <input type="email" id="email" required>
+        <label for="name">Email</label>
+      </div>
+      <div class="input-group">
+        <textarea  id="message" rows="8" required></textarea>
+        <label for="message">Message</label>
+      </div>
+    </form>
+
+    <div class="icons-container">
+      <i class="fa-brands fa-instagram fa-lg" style="color: #030000;"></i>
+      <i class="fa-brands fa-facebook" style="color: #000000;"></i>
+      <i class="fa-regular fa-envelope" style="color: #000000;"></i>
+    </div>
+
+    <div class="footer">
+      <h4>&copy;iShoot estimated 2023</h4>
+      <h4>*Disclaimer* photos addded in the portofolio are not my property. They are downloaded from unsplash. </h4>
+    </div>
+  </div>
+
 </body>
 </html>
