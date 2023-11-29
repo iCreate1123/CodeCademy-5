@@ -34,8 +34,23 @@
   </div>
 
  <!-- About me -->
-  <div class="aboutme" id="aboutme">
-    <h1>Who am i?</h1>
+  <div class="about-me" id="aboutme">
+
+    <div class="flex-container">
+      <div class="image-container">
+        <img src="/images/Untitled Export/DSC03060.jpg">
+      </div>
+
+      <div class="about-container">
+        <h1>I'm iShoot, a Front-End developer and Photographer based in the beautiful capital of Scotland, Edinburgh. </h1>
+        <p>I've spent the past 4 years working across different areas of digital design: front-end development, UX/UI design and photography.</p>
+        <p>These days I spent most of the time perfecting my coding skills.</p>
+        <p>When I am away from the PC, I workout, practise martials and travel.</p>
+      </div>
+    </div> 
+    <div class="contact-link">
+      <a><h1>CONTACT ME</h1></a>
+    </div>
   </div>
 
   <!-- Portfolio -->
@@ -63,28 +78,31 @@
   <!-- Contact me -->
   <div class="contact" id="contact">
     <h1>Thank you for visiting, please feel free to use any of the methods provided below to contact me.</h1>
-    <form>
-      <div class="input-group">
-        <input type="text" id="name" required>
-        <label for="name">Name</label>
-      </div>
-      <div class="input-group">
-        <input type="text" id="number" required>
-        <label for="name">Phone number</label>
-      </div>
-      <div class="input-group">
-        <input type="email" id="email" required>
-        <label for="name">Email</label>
-      </div>
-      <div class="input-group">
-        <textarea  id="message" rows="8" required></textarea>
-        <label for="message">Message</label>
-      </div>
-    </form>
+    <div class="form">
+      <form>
+        <div class="input-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" required>
+        </div>
+        <div class="input-group">
+          <label for="name">Phone number</label>
+          <input type="text" id="number" required>
+        </div>
+        <div class="input-group">
+          <label for="name">Email</label>
+          <input type="email" id="email" required>
+        </div>
+        <div class="input-group">
+          <label for="message">Message</label>
+          <textarea  id="message" rows="8" required></textarea>
+        </div>
+        <button type="submit">SUBMIT</button>
+      </form>
+    </div>
 
     <div class="icons-container">
-      <i class="fa-brands fa-instagram fa-lg" style="color: #ffffff;"></i>
-      <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
+      <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+      <i class="fa-brands fa-facebook"  id="facebook" style="color: #ffffff;"></i>
       <i class="fa-regular fa-envelope" style="color: #ffffff;"></i>
     </div>
 

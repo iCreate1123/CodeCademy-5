@@ -55,6 +55,10 @@ html {
   font-size: 3.5em;
   padding-right: 10rem;
 }
+.navbar a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
 .photoshoot {
   display: flex;
   flex-direction: column;
@@ -67,7 +71,6 @@ html {
   font-weight: 600;
   letter-spacing: 3rem;
   margin-bottom: 10rem;
-  /* padding-bottom: 1rem; */
   z-index: 1;
 }
 .photoshoot h4 {
@@ -78,7 +81,42 @@ html {
 }
 
 /* About me style  */
+.about-me {
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+  /* display: flex; */
+}
 
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  padding-top: 4rem;
+  margin: auto;
+  height: 60%;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.image-container2 {
+  width: 50%;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 2rem;
+  width: 50%;
+}
+.about-container h1 {
+  width: 100%;
+  font-size: 2.5rem;
+}
+.about-container p {
+  width: 40%;
+}
 /* Portfolio  style */
 .portfolio {
   width: 100%;
@@ -107,4 +145,80 @@ html {
 /* Contact me style */
 .contact {
   background-color: black;
+  text-align: center;
+  font-weight: 400;
+  padding-top: 10rem;
+}
+
+.contact h1 {
+  padding-bottom: 3rem;
+  letter-spacing: 0.6rem;
+  width: 50%;
+  margin: auto;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 3rem;
+}
+
+.input-group {
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 1rem;
+  outline: 0;
+  border: 1px solid rgb(240, 240, 240);
+  background: transparent;
+  cursor: text;
+  color: white;
+}
+
+label {
+  font-size: 2rem;
+  float: left;
+}
+
+button {
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  font-family: "Montserrat";
+  letter-spacing: 0.2rem;
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  width: 100%;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+}
+
+button:active {
+  box-shadow: 0px 0px 40px white;
+}
+.icons-container {
+  margin-bottom: 3rem;
+}
+
+i {
+  font-size: 4rem;
+}
+
+#facebook {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.footer h4 {
+  padding-bottom: 1rem;
 }
