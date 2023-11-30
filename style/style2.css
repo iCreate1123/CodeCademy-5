@@ -1,0 +1,230 @@
+/* universal styles  and repeating code*/
+html {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: white;
+  background-color: black;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Landing section */
+/* Mobile first */
+
+.landing-page {
+  background-image: url(/images/serjan-midili-yedYysaveC8-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-around;
+}
+.navbar-pc {
+  display: none;
+}
+
+.navheader-container h1 {
+  font-size: 2.5rem;
+}
+.navbar-tablet-and-mobile ul li {
+  padding: 1rem;
+}
+.navbar-tablet-and-mobile ul li i {
+  font-size: 2rem;
+  padding: 0.3rem;
+  z-index: 1;
+}
+
+.photoshoot {
+  padding: 0rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.photoshoot h1 {
+  letter-spacing: 0.3rem;
+}
+.photoshoot h4 {
+  margin-top: 0.5rem;
+  font-size: 0.5rem;
+}
+
+/*About section */
+
+.about-image-container {
+  padding: 0.3rem;
+}
+
+.description-container,
+p,
+h1 {
+  padding: 1rem;
+}
+
+.description-container h1 {
+  font-size: 1.4rem;
+}
+
+/* Portfolio */
+
+.image-container div {
+  margin: 1rem;
+  border: solid 7px white;
+}
+/*Contact */
+.contact {
+  text-align: center;
+}
+
+.contact h1 {
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+}
+
+.input-group {
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 3rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  max-width: 1050px;
+  padding: 1rem;
+  outline: 0;
+  border: 1px solid rgb(240, 240, 240);
+  background: transparent;
+  cursor: text;
+  color: white;
+}
+
+button {
+  font-size: 0.7rem;
+  padding: 0.5rem;
+  font-family: "Montserrat";
+  width: 10rem;
+}
+
+.icons-container {
+  margin: 1rem;
+}
+
+.icons-container i {
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.footer h4 {
+  padding: 0.6rem;
+}
+
+/* tablet */
+@media screen and (min-width: 768px) {
+  /* landing section */
+  .navbar-tablet-and-mobile {
+    display: none;
+  }
+
+  .landing-page {
+    background-image: url(/images/background\ 1.jpg);
+    justify-content: space-between;
+  }
+  .navheader-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navbar-pc {
+    display: flex;
+  }
+
+  .navbar-pc ul {
+    padding-top: 2.3rem;
+  }
+
+  .navbar-pc ul li {
+    display: inline;
+    padding-right: 5rem;
+    font-size: 1.6rem;
+  }
+
+  .navbar-pc ul li a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .navbar-pc a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  .navbar-pc a:visited {
+    text-decoration: none;
+  }
+
+  .navheader-container h1 {
+    font-size: 4rem;
+  }
+
+  .photoshoot {
+    margin-bottom: 15rem;
+  }
+
+  .photoshoot h1 {
+    font-size: 4rem;
+    letter-spacing: 1.5rem;
+    font-weight: 700;
+  }
+
+  .photoshoot h4 {
+    font-size: 1.5rem;
+  }
+
+  /* about section */
+  .about-me {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .description-container {
+    margin: auto;
+  }
+
+  /* portolio section */
+  .portfolio-heading h1 {
+    font-size: 3rem;
+  }
+  .image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 3rem;
+  }
+  /* contact */
+  .contact h1 {
+    font-size: 2rem;
+  }
+
+  .icons-container i {
+    font-size: 3rem;
+  }
+}
