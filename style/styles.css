@@ -75,7 +75,7 @@ html {
   font-weight: 600;
   letter-spacing: 3rem;
   margin-bottom: 10rem;
-  z-index: 1;
+  padding: 1;
 }
 .photoshoot h4 {
   width: 60%;
@@ -228,6 +228,10 @@ html {
   flex-direction: column;
 }
 
+.image-container2 img {
+  display: block;
+  max-width: 100%;
+}
 .flex-container {
   position: relative;
   display: flex;
@@ -274,6 +278,11 @@ html {
   flex-wrap: wrap;
   flex-shrink: 1;
   justify-content: space-around;
+}
+
+.image-container img {
+  display: block;
+  max-width: 100%;
 }
 
 .image-container div {
